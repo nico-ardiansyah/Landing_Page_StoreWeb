@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --font-Big-Shoulders: "Big Shoulders Stencil", sans-serif;
+  --font-EB-Garamond: "EB Garamond", serif;
+  --font-Markazi: "Markazi Text", serif;
+  --animate-bounce-loading: bounce-loading 1s linear infinite;
+  --animate-slide: slide 100s 5s ease-in-out infinite;
+
+  @keyframes slide {
+    10%,
+    15% {
+      transform: translateX(-100%);
+    }
+    20%,
+    35% {
+      transform: translateX(-200%);
+    }
+    40%,
+    55% {
+      transform: translateX(-300%);
+    }
+    60%,
+    75% {
+      transform: translateX(-200%);
+    }
+    80%,
+    95% {
+      transform: translateX(-100%);
+    }
+  }
+
+  @keyframes bounce-loading {
+    0%,
+    100% {
+      transform: translateY(-30%);
+    }
+    50% {
+      transform: translateY(0%);
+    }
+  }
+}
